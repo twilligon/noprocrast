@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "noprocrast",
+  "version": "1.1",
+  "description": "Read more",
+  "permissions": ["declarativeNetRequest", "tabs", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "sw.js", "type": "module" },
+  "options_ui": { "page": "options.html" },
+  "web_accessible_resources": [
+    { "resources": ["bounce.html"], "matches": ["<all_urls>"] }
+  ]
+}
